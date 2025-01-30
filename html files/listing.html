@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Listings</title>
+    <link rel="stylesheet" href="styles/listing.css">
+</head>
+<body>
+    <header>
+        <h1>Available House Listings</h1>
+        <nav>
+            <ul>
+                <li><a href="login.php">Home</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="listings">
+        <h2>Our Properties</h2>
+        <div class="listing">
+            <img src="./images/house1.jpeg" alt="House 1">
+            <h3>Beautiful Family House</h3>
+            <p>Location: Hyderabad, HYD</p>
+            <p>Price: 45,000/month</p>
+            <button>View Details</button>
+        </div>
+        <div class="listing">
+            <img src="./images/house2.jpeg" alt="House 2">
+            <h3>Modern Apartment</h3>
+            <p>Location: Hyderabad, HYD</p>
+            <p>Price: 20,000/month</p>
+            <button>View Details</button>
+        </div>
+        <div class="listing">
+            <img src="./images/farmhouse.jpeg" alt="House 3">
+            <h3>Cozy Cottage</h3>
+            <p>Location: Moinabad, MN</p>
+            <p>Price: 15,000/day</p>
+            <button>View Details</button>
+        </div>
+    </section>
+    
+    <section id="add-property">
+        <h2>Add Your Property</h2>
+        <form action="property.php" method="post">
+            <label for="address">address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="price">price:</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="description">description:</label>
+            <input type="text" id="description" name="description" required>
+            
+            <label for="image">Image URl:</label>
+            <input type="url" id="image" name="image" required>
+            
+            <label for="owner name">owner name:</label>
+            <input type="text" id="owner name" name="owner name" required>
+            
+            <label for="owner contact">owner contact:</label>
+            <input type="number" id="owner contact" name="owner contact" required>
+            
+            <label for="date">date:</label>
+            <input type="datetime" id="date" name="date" required>
+            
+            <button type="submit">Add Property</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 House Rental Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
